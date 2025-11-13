@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <package_name>requests</package_name>
+    <repository_url>https://pypi.org/pypi</repository_url>
+    <test_mode>false</test_mode>
+    <package_version>2.25.1</package_version>
+    <output_image>dependencies_graph.svg</output_image>
+    <max_depth>5</max_depth>
+    <substring_filter></substring_filter>
+    <ascii_tree>false</ascii_tree>
+</config>
