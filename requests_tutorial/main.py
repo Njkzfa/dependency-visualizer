@@ -13,11 +13,12 @@ def main():
         print("1. Базовые операции (GET/POST)")
         print("2. Продвинутые операции (Сессии, заголовки)")
         print("3. Обработка ошибок")
-        print("4. Визуализация зависимостей")
-        print("5. Запустить ВСЕ тесты")
-        print("6. Выход")
+        print("4. Анализ зависимостей (Graph)")
+        print("5. ВИЗУАЛИЗАЦИЯ - Mermaid и SVG")
+        print("6. Запустить ВСЕ тесты")
+        print("7. Выход")
 
-        choice = input("\nВведите номер (1-6): ").strip()
+        choice = input("\nВведите номер (1-7): ").strip()
 
         if choice == '1':
             print("\n" + "=" * 50)
@@ -46,10 +47,24 @@ def main():
                 dependency_visualizer.export_dependency_data()
             except ImportError as e:
                 print(f"Ошибка: {e}")
-                print("Установите зависимости для визуализации:")
-                print("pip install matplotlib networkx")
 
         elif choice == '5':
+            print("\n" + "=" * 50)
+            print("ЭТАП 5: ВИЗУАЛИЗАЦИЯ ЗАВИСИМОСТЕЙ")
+            print("=" * 50)
+
+            try:
+                import stage5_main
+                stage5_main.main()
+            except ImportError as e:
+                print(f"Ошибка: {e}")
+                print("Создайте файлы для этапа 5:")
+                print("- dependency_analyzer.py")
+                print("- mermaid_generator.py")
+                print("- comparison_tool.py")
+                print("- stage5_main.py")
+
+        elif choice == '6':
             print("\n" + "=" * 50)
             print("ЗАПУСК ВСЕХ ТЕСТОВ...")
             basic_operations.test_basic_get()
@@ -62,7 +77,7 @@ def main():
             error_handling.test_error_handling()
             error_handling.test_retry_logic()
 
-        elif choice == '6':
+        elif choice == '7':
             print("До свидания!")
             break
         else:

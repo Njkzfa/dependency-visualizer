@@ -1,0 +1,25 @@
+%% ГРАФ ЗАВИСИМОСТЕЙ ДЛЯ PANDAS
+graph TD
+    pandas[pandas<br/>ОСНОВНОЙ ПАКЕТ]
+    pandas --> numpy
+    numpy[numpy<br/>ПРЯМАЯ ЗАВИСИМОСТЬ]
+    pandas --> python-dateutil
+    python-dateutil[python-dateutil<br/>ПРЯМАЯ ЗАВИСИМОСТЬ]
+    pandas --> pytz
+    pytz[pytz<br/>ПРЯМАЯ ЗАВИСИМОСТЬ]
+    pandas --> tzdata
+    tzdata[tzdata<br/>ПРЯМАЯ ЗАВИСИМОСТЬ]
+    python-dateutil --> six
+    six[six<br/>ТРАНЗИТИВНАЯ]
+
+    %% Стили узлов
+    classDef main fill:#e74c3c,color:white,stroke:#c0392b
+    classDef direct fill:#3498db,color:white,stroke:#2980b9
+    classDef transitive fill:#2ecc71,color:white,stroke:#27ae60
+
+    class pandas main
+    class numpy direct
+    class python-dateutil direct
+    class pytz direct
+    class tzdata direct
+    class six transitive
