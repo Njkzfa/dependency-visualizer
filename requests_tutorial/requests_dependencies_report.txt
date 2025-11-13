@@ -1,0 +1,31 @@
+ОТЧЕТ О ЗАВИСИМОСТЯХ ПАКЕТА 'requests'
+==================================================
+
+ОСНОВНАЯ ИНФОРМАЦИЯ:
+Пакет: requests
+Версия: 2.31.0
+Всего пакетов в дереве: 13
+
+ПРЯМЫЕ ЗАВИСИМОСТИ:
+1. PySocks
+2. certifi
+3. chardet
+4. charset_normalizer
+5. idna
+6. urllib3
+
+ДЕРЕВО ЗАВИСИМОСТЕЙ:
+
+requests:
+  └── PySocks: SOCKS proxy support
+  └── certifi: SSL certificates
+  └── chardet: Character encoding detection
+  └── charset_normalizer: Character encoding normalization
+  └── idna: Internationalized Domain Names
+  └── urllib3: HTTP client library
+      └── brotli
+      └── brotlicffi
+      └── pyOpenSSL
+      └── cryptography
+      └── idna
+      └── certifi
