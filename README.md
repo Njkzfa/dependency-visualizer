@@ -55,13 +55,13 @@ pip show <package_name>
 Обработка ошибок:
 Коректная обработка отсутствующих пакетов
   
-Примеры (тестовый режим)  
+Примеры (тестовый режим)    
 Команды:  
-cd request_tutorial
-python main.py
-python main.py graph   -t -p A -r 
-python main.py order   -t -p A -r 
-python main.py mermaid -t -p A -r
+cd request_tutorial  
+python main.py  
+python main.py graph   -t -p A -r  
+python main.py order   -t -p A -r  
+python main.py mermaid -t -p A -r  
 
 
 
