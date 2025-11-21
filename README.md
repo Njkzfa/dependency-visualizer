@@ -31,7 +31,7 @@ python main.py graph  -p <PKG> -r <REPO_OR_FILE> [-t]
 python main.py order  -p <PKG> -r <REPO_OR_FILE> [-t]  
   
 # Этап 5: Mermaid (печать и/или запись в файл)  
-python main.py mermaid -p <PKG> -r <REPO_OR_FILE> [-t] -o graph.mmd
+python main.py mermaid -p <PKG> -r <REPO_OR_FILE> [-t] -o graph.mmd  
 Параметры  
 -p/--package — имя анализируемого пакета.  
 -r/--repo — путь/URL к python(pip). В тестовом режиме — путь к текстовому файлу с графом.
